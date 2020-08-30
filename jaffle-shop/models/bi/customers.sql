@@ -43,3 +43,6 @@ final as (
 )
 
 select * from final
+{% if target.name == 'dev' %}
+limit 10
+{% endif %}
